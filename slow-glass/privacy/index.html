@@ -48,7 +48,7 @@
 <!-- ===================== ENGLISH ===================== -->
 <section id="en" lang="en" aria-labelledby="en-title">
   <h2 id="en-title">English</h2>
-  <p class="meta">Last updated: 15 November 2026. Applies to: Slow Glass for Android, version 1.0.1 (build 2021), package <code>com.akotech.slowglass</code>. Publisher: AkoTech.</p>
+  <p class="meta">Last updated: 15 November 2026. Applies to: Slow Glass for Android, version 1.0.2 (build 2022), package <code>com.akotech.slowglass</code>. Publisher: AkoTech.</p>
 
   <div class="box" role="note">
     <strong>In short.</strong> This version of Slow Glass keeps your game progress and settings on your own device. It has no account or sign-in, no developer-operated server, and no analytics or crash-reporting code of its own. Ads and purchases are switched off in this version. You can contact us at the email address below.
@@ -63,17 +63,26 @@
     <thead><tr><th>What</th><th>Why</th></tr></thead>
     <tbody>
       <tr><td>Game progress: current level, move count, stage, reward piece, collected pieces, “expansion seen” flag</td><td>So you can continue where you left off.</td></tr>
-      <tr><td>Settings: sound muted, colour-blind mode</td><td>To remember your choices.</td></tr>
+      <tr><td>Settings: sound muted, play in silent mode, colour-blind mode</td><td>To remember your choices.</td></tr>
+      <tr><td>How many times the Google Play rating window was requested (0, 1 or 2)</td><td>So the game never asks more than twice.</td></tr>
       <tr><td>Language choice</td><td>To remember the language you selected (or “follow the device”).</td></tr>
       <tr><td>A copy of a save that could not be read</td><td>Kept only so a damaged save is not silently lost.</td></tr>
     </tbody>
   </table>
   <p>None of this is sent to us. In this version the app does not ask for or store your name, email address, birth date, phone number, contacts, location, photos, microphone or camera data, advertising ID, or any account identifier.</p>
   <p>Android permissions: the installed app declares <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>com.android.vending.BILLING</code>, <code>WAKE_LOCK</code> and <code>FOREGROUND_SERVICE</code>. These are added by the libraries the app uses (audio, Google Play Billing, and Google Mobile Ads). None of them asks you for runtime access to location, contacts, camera, microphone, photos or files. The advertising-ID and Privacy Sandbox ad permissions are removed from the app.</p>
+  <p><strong>Features that hand something to another app.</strong> None of these sends anything to us.</p>
+  <ul>
+    <li><strong>Sharing a piece (“Workshop photo”).</strong> When you tap Share, the app draws the picture on your device, keeps it briefly in its private cache, and hands it, with a short text and the game's Google Play link, to the app you pick in Android's share menu. What happens next is up to that app and its terms.</li>
+    <li><strong>Rating.</strong> At most twice, between levels, the game asks Google Play to show its own rating window; the “Rate Slow Glass” row opens the game's Google Play page. Google Play decides whether the window appears. A rating or review you enter goes to Google Play, is handled under Google Play's terms and is published there; the app does not see or store it.</li>
+    <li><strong>Support.</strong> The “Support and feedback” row opens your email app with our address filled in. Nothing is sent unless you send the email yourself (see section 7).</li>
+    <li><strong>Privacy policy link.</strong> Tapping the “Privacy policy” card in Workshop › Privacy opens this page in your browser. The app passes only this page's address to the browser.</li>
+    <li><strong>Silent mode.</strong> The app checks whether your phone is on silent or vibrate, only to decide whether to play sounds. It does not store or send this.</li>
+  </ul>
 
   <h3>3. Ads and purchases: currently off</h3>
   <p>In this version there are no ads, no purchases, no ad-consent form and no age question. The app is configured so that ads and purchases stay disabled unless a build is deliberately configured otherwise, and the shipped configuration leaves them disabled.</p>
-  <p>For transparency: the app package contains Google Mobile Ads (including Google's User Messaging Platform) and Google Play Billing libraries, which are switched off by configuration. Based on our source review, the app does not start them in this version. We have not captured the app's network traffic, so this page does not promise that no Google or Android component ever communicates with a server (for example, Google Play itself when you install or update the app, or Android's normal system services).</p>
+  <p>For transparency: the app package contains Google Mobile Ads (including Google's User Messaging Platform) and Google Play Billing libraries, which are switched off by configuration. Based on our source review, the app does not start them in this version. On an Android emulator we measured version 1.0.2's own network traffic while playing and using the features above and saw none. That is a test, not a guarantee, so this page does not promise that no Google or Android component ever communicates with a server (for example, Google Play itself when you install or update the app, or Android's normal system services).</p>
   <p><strong>If this changes.</strong> If a later version turns on ads, purchases, analytics or any other data collection, this policy and the store's data disclosures will be updated before that version is released. The current design for a future version is: no ads for users who are under 13, for users with an unknown age range, or for users who have not completed the consent step; purchases would be handled by Google Play, and a purchase receipt (store purchase token and order details, not your name) could be sent to a verification service run by the developer. This describes a design, not a commitment to release such a feature.</p>
 
   <h3>4. Backups and deleting your data</h3>
@@ -96,7 +105,7 @@
   <p>Your data stays in the app's private storage, protected by Android's app sandbox. No method of storage or transmission is completely secure, and we make no guarantee of absolute security.</p>
 
   <h3>10. Third-party services</h3>
-  <p>Google Play (installing and updating the app, backup) and GitHub (hosting this page) are separate services with their own privacy terms: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+  <p>Google Play (installing and updating the app, backup, the rating window) and GitHub (hosting this page) are separate services with their own privacy terms: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
   <h3>11. Changes to this policy</h3>
   <p>When we change this policy we will update the date at the top of this page. Changes that add data collection, ads or purchases will be published before the version that introduces them is released.</p>
@@ -105,7 +114,7 @@
 <!-- ===================== TÜRKÇE ===================== -->
 <section id="tr" lang="tr" aria-labelledby="tr-title">
   <h2 id="tr-title">Türkçe</h2>
-  <p class="meta">Son güncelleme: 15 Kasım 2026. Kapsam: Android için Slow Glass, sürüm 1.0.1 (derleme 2021), paket adı <code>com.akotech.slowglass</code>. Yayıncı: AkoTech.</p>
+  <p class="meta">Son güncelleme: 15 Kasım 2026. Kapsam: Android için Slow Glass, sürüm 1.0.2 (derleme 2022), paket adı <code>com.akotech.slowglass</code>. Yayıncı: AkoTech.</p>
 
   <div class="box" role="note">
     <strong>Kısaca.</strong> Slow Glass'ın bu sürümü oyun ilerlemenizi ve ayarlarınızı kendi cihazınızda tutar. Hesap veya oturum açma, geliştiricinin işlettiği bir sunucu ya da uygulamanın kendi analitik veya çökme raporlama kodu yoktur. Bu sürümde reklamlar ve satın alma kapalıdır. Aşağıdaki e-posta adresinden bize ulaşabilirsiniz.
@@ -120,17 +129,26 @@
     <thead><tr><th>Ne</th><th>Neden</th></tr></thead>
     <tbody>
       <tr><td>Oyun ilerlemesi: mevcut seviye, hamle sayısı, aşama, ödül parçası, toplanan parçalar, “genişleme görüldü” işareti</td><td>Kaldığınız yerden devam edebilmeniz için.</td></tr>
-      <tr><td>Ayarlar: sesin kapalı olması, renk körlüğü modu</td><td>Tercihlerinizi hatırlamak için.</td></tr>
+      <tr><td>Ayarlar: sesin kapalı olması, sessiz modda da çalma, renk körlüğü modu</td><td>Tercihlerinizi hatırlamak için.</td></tr>
+      <tr><td>Google Play puan penceresinin kaç kez istendiği (0, 1 veya 2)</td><td>Oyunun ikiden fazla sormaması için.</td></tr>
       <tr><td>Dil seçimi</td><td>Seçtiğiniz dili (veya “cihazı izle” tercihini) hatırlamak için.</td></tr>
       <tr><td>Okunamayan bir kaydın kopyası</td><td>Hasarlı bir kaydın sessizce kaybolmaması için tutulur.</td></tr>
     </tbody>
   </table>
   <p>Bunların hiçbiri bize gönderilmez. Bu sürümde uygulama adınızı, e-posta adresinizi, doğum tarihinizi, telefon numaranızı, rehberinizi, konumunuzu, fotoğraflarınızı, mikrofon veya kamera verilerinizi, reklam kimliğinizi ya da herhangi bir hesap kimliğini istemez ve saklamaz.</p>
   <p>Android izinleri: yüklü uygulama <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>com.android.vending.BILLING</code>, <code>WAKE_LOCK</code> ve <code>FOREGROUND_SERVICE</code> izinlerini bildirir. Bunlar uygulamanın kullandığı kütüphaneler (ses, Google Play Faturalandırma ve Google Mobile Ads) tarafından eklenir. Hiçbiri sizden konum, rehber, kamera, mikrofon, fotoğraf veya dosyalara çalışma anında erişim istemez. Reklam kimliği ve Privacy Sandbox reklam izinleri uygulamadan çıkarılmıştır.</p>
+  <p><strong>Başka bir uygulamaya bir şey devreden özellikler.</strong> Bunların hiçbiri bize bir şey göndermez.</p>
+  <ul>
+    <li><strong>Eser paylaşma (“Atölye fotoğrafı”).</strong> Paylaş'a dokunduğunuzda uygulama görüntüyü cihazınızda çizer, kısa süre kendi özel önbelleğinde tutar ve kısa bir metin ile oyunun Google Play bağlantısıyla birlikte Android paylaşım menüsünde seçtiğiniz uygulamaya verir. Sonrası o uygulamaya ve onun koşullarına bağlıdır.</li>
+    <li><strong>Puan verme.</strong> Oyun en fazla iki kez, bölüm aralarında, Google Play'den kendi puan penceresini göstermesini ister; “Slow Glass'a puan ver” satırı oyunun Google Play sayfasını açar. Pencerenin çıkıp çıkmayacağına Google Play karar verir. Girdiğiniz puan veya yorum Google Play'e gider, Google Play'in koşullarına göre işlenir ve orada yayımlanır; uygulama bunu görmez ve saklamaz.</li>
+    <li><strong>Destek.</strong> “Destek ve geri bildirim” satırı e-posta uygulamanızı adresimiz dolu olarak açar. E-postayı siz göndermedikçe hiçbir şey gönderilmez (bkz. bölüm 7).</li>
+    <li><strong>Gizlilik politikası bağlantısı.</strong> Atölye › Gizlilik'teki “Gizlilik politikası” kartına dokunduğunuzda bu sayfa tarayıcınızda açılır. Uygulama tarayıcıya yalnız bu sayfanın adresini verir.</li>
+    <li><strong>Sessiz mod.</strong> Uygulama, yalnız ses çalıp çalmayacağına karar vermek için telefonunuzun sessiz veya titreşimde olup olmadığına bakar. Bunu saklamaz ve göndermez.</li>
+  </ul>
 
   <h3>3. Reklamlar ve satın almalar: şu anda kapalı</h3>
   <p>Bu sürümde reklam, satın alma, reklam onay formu ve yaş sorusu yoktur. Uygulama, bir derleme bilinçli olarak farklı yapılandırılmadıkça reklamlar ve satın almalar kapalı kalacak şekilde ayarlanmıştır; yayımlanan yapılandırma bunları kapalı bırakır.</p>
-  <p>Şeffaflık için: uygulama paketi, yapılandırmayla kapatılmış Google Mobile Ads (Google'ın Kullanıcı Mesajlaşma Platformu dahil) ve Google Play Faturalandırma kütüphanelerini içerir. Kaynak kod incelememize göre uygulama bunları bu sürümde başlatmaz. Uygulamanın ağ trafiğini yakalayıp incelemedik; bu nedenle bu sayfa, hiçbir Google veya Android bileşeninin bir sunucuyla hiç iletişim kurmayacağını (örneğin uygulamayı yüklerken veya güncellerken Google Play'in kendisi ya da Android'in olağan sistem hizmetleri) vaat etmez.</p>
+  <p>Şeffaflık için: uygulama paketi, yapılandırmayla kapatılmış Google Mobile Ads (Google'ın Kullanıcı Mesajlaşma Platformu dahil) ve Google Play Faturalandırma kütüphanelerini içerir. Kaynak kod incelememize göre uygulama bunları bu sürümde başlatmaz. 1.0.2 sürümünün kendi ağ trafiğini bir Android emülatöründe, oynarken ve yukarıdaki özellikleri kullanırken ölçtük ve hiç trafik görmedik. Bu bir test, garanti değil; bu nedenle bu sayfa, hiçbir Google veya Android bileşeninin bir sunucuyla hiç iletişim kurmayacağını (örneğin uygulamayı yüklerken veya güncellerken Google Play'in kendisi ya da Android'in olağan sistem hizmetleri) vaat etmez.</p>
   <p><strong>Bu değişirse.</strong> Sonraki bir sürüm reklamları, satın almaları, analitiği veya başka bir veri toplamayı açarsa, bu politika ve mağazadaki veri beyanları o sürüm yayımlanmadan önce güncellenir. Gelecek bir sürüm için mevcut tasarım şudur: 13 yaşın altındaki, yaş aralığı bilinmeyen veya onay adımını tamamlamamış kullanıcılara reklam gösterilmez; satın almaları Google Play yürütür ve bir satın alma makbuzu (mağaza satın alma jetonu ve sipariş bilgileri; adınız değil) geliştiricinin işlettiği bir doğrulama hizmetine gönderilebilir. Bu bir tasarımın tarifidir, böyle bir özelliği yayımlama taahhüdü değildir.</p>
 
   <h3>4. Yedekler ve verilerinizi silme</h3>
@@ -153,7 +171,7 @@
   <p>Verileriniz uygulamanın özel depolama alanında, Android'in uygulama yalıtımıyla korunarak kalır. Hiçbir saklama veya aktarım yöntemi tamamen güvenli değildir ve mutlak güvenlik garantisi vermiyoruz.</p>
 
   <h3>10. Üçüncü taraf hizmetler</h3>
-  <p>Google Play (uygulamayı yükleme ve güncelleme, yedekleme) ve GitHub (bu sayfanın barındırılması) kendi gizlilik koşulları olan ayrı hizmetlerdir: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Genel Gizlilik Beyanı</a>.</p>
+  <p>Google Play (uygulamayı yükleme ve güncelleme, yedekleme, puan penceresi) ve GitHub (bu sayfanın barındırılması) kendi gizlilik koşulları olan ayrı hizmetlerdir: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Genel Gizlilik Beyanı</a>.</p>
 
   <h3>11. Bu politikadaki değişiklikler</h3>
   <p>Bu politikayı değiştirdiğimizde sayfanın üstündeki tarihi güncelleriz. Veri toplama, reklam veya satın alma ekleyen değişiklikler, bunları getiren sürüm yayımlanmadan önce yayımlanır.</p>
