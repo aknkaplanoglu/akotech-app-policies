@@ -48,10 +48,10 @@
 <!-- ===================== ENGLISH ===================== -->
 <section id="en" lang="en" aria-labelledby="en-title">
   <h2 id="en-title">English</h2>
-  <p class="meta">Last updated: 20 November 2026. Applies to: Bade Mahjong for Android, version 0.19.1 (build 31), package <code>com.akotech.bademahjong</code>. Publisher: AkoTech.</p>
+  <p class="meta">Last updated: 20 November 2026. Applies to: Bade Mahjong for Android, version 0.20.0 (build 32), package <code>com.akotech.bademahjong</code>. Publisher: AkoTech.</p>
 
   <div class="box" role="note">
-    <strong>In short.</strong> Bade Mahjong keeps your game progress and settings on your own device. It does not connect to the internet, has no account or sign-in, no developer-operated server, no ads, no purchases and no analytics or crash-reporting code. Nothing is sent to us. You can contact us at the email address below.
+    <strong>In short.</strong> Bade Mahjong keeps your game progress and settings on your own device. It has no account or sign-in, no developer-operated server, no ads, and no analytics or crash-reporting code of our own. The first 60 levels are free; one optional, one-time purchase through Google Play unlocks all 3,000 levels. Google Play handles the payment, we never see your card or payment details, and nothing is sent to us. Because of that purchase, the app contains Google's Play Billing library, and the app asks Android for network access (see section 2). You can contact us at the email address below.
   </div>
 
   <h3>1. Who we are and how to contact us</h3>
@@ -67,19 +67,24 @@
       <tr><td>Whether you have seen the how-to-play tutorial and short tips</td><td>So they are not shown again.</td></tr>
       <tr><td>A per-level play summary: how often a level was started and finished, how often Undo, Hint, Shuffle and Rescue were used, and play time</td><td>Shown to you under Settings › Trial summary. It stays on the device.</td></tr>
       <tr><td>Saves from earlier versions of the game, if you had them</td><td>Kept so that an update never loses your progress.</td></tr>
+      <tr><td>Whether the full game is unlocked: one yes/no flag on the device, set when a purchase is confirmed or restored, or automatically for a save that had already passed level 60 before this version</td><td>So the levels stay open, also offline, and the app does not ask again.</td></tr>
     </tbody>
   </table>
   <p>None of this is sent to us. The app does not ask for or store your name, email address, birth date, phone number, contacts, location, photos, files, microphone or camera data, advertising ID, or any account identifier.</p>
-  <p>Android permissions: the app does not request the <code>INTERNET</code> permission, so it cannot send data over the network. The only permission in the installed app is an internal one that Android's own support library adds to protect the app's broadcast receivers; it does not give the app access to any of your data and you are never asked for it.</p>
+  <p>Android permissions: the installed app lists these permissions. <code>com.android.vending.BILLING</code> lets the app ask Google Play about the full-game purchase. <code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code> are added by Google's Play Billing library, which uses them for its own communication with Google; Bade Mahjong's own code makes no network requests and there is no server of ours for it to talk to. The remaining one is an internal permission that Android's own support library adds to protect the app's broadcast receivers. None of them gives the app access to your contacts, location, photos, files, microphone, camera or advertising ID, and you are not asked to approve any of them: Android grants them when you install the app.</p>
   <p><strong>Copying the trial summary.</strong> Settings › Trial summary has a button that copies the summary described above to your phone's clipboard. Nothing leaves the app unless you press it and then paste the text somewhere yourself.</p>
 
   <h3>3. Ads and purchases</h3>
-  <p>This version shows no ads and sells nothing. It contains no advertising, billing, analytics or crash-reporting libraries.</p>
-  <p><strong>If this changes.</strong> If a later version adds purchases, ads or any other data handling, this policy and the store's data disclosures will be updated before that version is released. Purchases, if added, would be handled by Google Play.</p>
+  <p>This version shows no ads. The first 60 levels are free. One optional, one-time in-app purchase through Google Play, shown as "Full game", unlocks all 3,000 levels. It is not a subscription: nothing renews and nothing is charged again.</p>
+  <p><strong>How a purchase works.</strong> When you choose to buy, Google Play shows its own purchase screen and processes the payment under Google's terms and <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>. The app only receives a confirmation from Google Play, on your device, that the purchase is complete. We never see your card or payment details, your name or your email address through this, and we run no server that receives purchase information. The app confirms ("acknowledges") the purchase to Google Play and keeps the single "unlocked" flag described in section 2. The flag is not tied to any account of ours.</p>
+  <p><strong>Restoring.</strong> "Restore purchase" asks Google Play whether your Google account already owns the full game, so you can unlock it again on a new phone or after clearing the app's data. This needs an internet connection; playing the levels does not.</p>
+  <p><strong>Google's Play Billing library.</strong> This is Google's code, built into the app. Besides talking to the Google Play app, it may send its own technical and usage information to Google, as described in the Google Privacy Policy. We do not receive or control that information.</p>
+  <p><strong>Refunds and payment questions</strong> are handled by Google Play under its refund policy. We cannot see or change your purchases.</p>
+  <p><strong>If this changes.</strong> If a later version adds ads, subscriptions or any other data handling, this policy and the store's data disclosures will be updated before that version is released.</p>
 
   <h3>4. Backups and deleting your data</h3>
   <p>The app does not turn off Android's backup feature. Depending on your device, Android version and settings, your app data may be included in a backup held by Google or your device maker and may be restored on a new device. We do not control or have access to those backups.</p>
-  <p>Because the game data lives on your device, you delete it yourself: open Android Settings → Apps → Bade Mahjong → Storage → Clear data, or uninstall the app. This removes your progress, settings and the trial summary. Any backup copy is managed in your Google account or device-maker backup settings. There is no in-app delete button in this version.</p>
+  <p>Because the game data lives on your device, you delete it yourself: open Android Settings → Apps → Bade Mahjong → Storage → Clear data, or uninstall the app. This removes your progress, settings, the trial summary and the "unlocked" flag. If you bought the full game, use "Restore purchase" afterwards to unlock it again at no extra charge; the purchase itself belongs to your Google account and is not removed by clearing data or uninstalling. Any backup copy is managed in your Google account or device-maker backup settings. There is no in-app delete button in this version.</p>
 
   <h3>5. Age</h3>
   <p>Bade Mahjong is a general puzzle game made with adult players in mind, and it is not directed at children. It does not ask anyone, including children, to enter personal information. If you are a parent or guardian and believe a child has sent us personal information, for example by email, contact us at the email address above so we can review the request.</p>
@@ -91,13 +96,13 @@
   <p>If you write to us, we receive your email address, the name shown on your account, your message and anything else you include. We use it only to read and answer your message and to handle your request. The email is held in the publisher's email account, which is provided by Google (see the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>). We keep it for as long as needed to handle the request and keep a record of it, and then delete it when it is no longer needed. We have not set a fixed number of days. Please do not send sensitive personal information; you never need to send us your game save.</p>
 
   <h3>8. Your choices and rights</h3>
-  <p>We do not hold your game data, so there is nothing for us to look up or delete about it; you control it on your device as described above. For emails you have sent us, you can ask us to tell you what we hold or to delete it. Depending on where you live, local law may give you additional rights; this page does not state which law applies to the publisher.</p>
+  <p>We do not hold your game data, so there is nothing for us to look up or delete about it; you control it on your device as described above. For emails you have sent us, you can ask us to tell you what we hold or to delete it. Depending on where you live, local law may give you additional rights; this page does not state which law applies to the publisher. Purchase records are held by Google under your Google account; ask Google for access to them or to delete them.</p>
 
   <h3>9. Security</h3>
   <p>Your data stays in the app's private storage, protected by Android's app sandbox. No method of storage or transmission is completely secure, and we make no guarantee of absolute security.</p>
 
   <h3>10. Third-party services</h3>
-  <p>Google Play (installing and updating the app, backup) and GitHub (hosting this page) are separate services with their own privacy terms: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+  <p>Google Play (installing and updating the app, backup, and the optional purchase through Google Play Billing) and GitHub (hosting this page) are separate services with their own privacy terms: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
 
   <h3>11. Changes to this policy</h3>
   <p>When we change this policy we will update the date at the top of this page. Changes that add data collection, ads or purchases will be published before the version that introduces them is released.</p>
@@ -106,10 +111,10 @@
 <!-- ===================== TÜRKÇE ===================== -->
 <section id="tr" lang="tr" aria-labelledby="tr-title">
   <h2 id="tr-title">Türkçe</h2>
-  <p class="meta">Son güncelleme: 20 Kasım 2026. Kapsam: Android için Bade Mahjong, sürüm 0.19.1 (derleme 31), paket adı <code>com.akotech.bademahjong</code>. Yayıncı: AkoTech.</p>
+  <p class="meta">Son güncelleme: 20 Kasım 2026. Kapsam: Android için Bade Mahjong, sürüm 0.20.0 (derleme 32), paket adı <code>com.akotech.bademahjong</code>. Yayıncı: AkoTech.</p>
 
   <div class="box" role="note">
-    <strong>Kısaca.</strong> Bade Mahjong oyun ilerlemenizi ve ayarlarınızı kendi cihazınızda tutar. İnternete bağlanmaz; hesap veya giriş, geliştiricinin işlettiği bir sunucu, reklam, satın alma, analiz ya da çökme raporlama kodu yoktur. Bize hiçbir şey gönderilmez. Aşağıdaki e-posta adresinden bize ulaşabilirsiniz.
+    <strong>Kısaca.</strong> Bade Mahjong oyun ilerlemenizi ve ayarlarınızı kendi cihazınızda tutar. Hesap veya giriş, geliştiricinin işlettiği bir sunucu, reklam ve bize ait analiz ya da çökme raporlama kodu yoktur. İlk 60 bölüm ücretsizdir; Google Play üzerinden yapılan isteğe bağlı, tek seferlik bir satın alma 3.000 bölümün hepsini açar. Ödemeyi Google Play yürütür, kart veya ödeme bilgilerinizi görmeyiz ve bize hiçbir şey gönderilmez. Bu satın alma yüzünden uygulama Google'ın Play Billing kütüphanesini içerir ve Android'den ağ erişimi ister (bkz. bölüm 2). Aşağıdaki e-posta adresinden bize ulaşabilirsiniz.
   </div>
 
   <h3>1. Biz kimiz, bize nasıl ulaşılır</h3>
@@ -125,19 +130,24 @@
       <tr><td>Nasıl oynanır tanıtımını ve kısa ipuçlarını görüp görmediğiniz</td><td>Tekrar gösterilmemeleri için.</td></tr>
       <tr><td>Bölüm başına oyun özeti: bölümün kaç kez başlatılıp bitirildiği, Geri al, İpucu, Karıştır ve Kurtar'ın kaç kez kullanıldığı ve oyun süresi</td><td>Ayarlar › Deneme özeti altında size gösterilir. Cihazda kalır.</td></tr>
       <tr><td>Oyunun önceki sürümlerinden kalan kayıtlar (varsa)</td><td>Bir güncellemenin ilerlemenizi asla kaybettirmemesi için saklanır.</td></tr>
+      <tr><td>Tam oyunun açık olup olmadığı: cihazda tek bir evet/hayır bayrağı; satın alma onaylandığında ya da geri yüklendiğinde, ya da bu sürümden önce zaten 60. bölümü geçmiş bir kayıt için kendiliğinden işaretlenir</td><td>Bölümler çevrimdışıyken de açık kalsın ve uygulama sizden bir daha istemesin diye.</td></tr>
     </tbody>
   </table>
   <p>Bunların hiçbiri bize gönderilmez. Uygulama adınızı, e-posta adresinizi, doğum tarihinizi, telefon numaranızı, kişilerinizi, konumunuzu, fotoğraflarınızı, dosyalarınızı, mikrofon veya kamera verilerinizi, reklam kimliğinizi ya da herhangi bir hesap kimliğinizi istemez ve saklamaz.</p>
-  <p>Android izinleri: uygulama <code>INTERNET</code> iznini istemez, bu yüzden ağ üzerinden veri gönderemez. Yüklü uygulamadaki tek izin, Android'in kendi destek kitaplığının uygulamanın yayın alıcılarını korumak için eklediği dahili bir izindir; uygulamaya verilerinizden hiçbirine erişim vermez ve sizden hiçbir zaman istenmez.</p>
+  <p>Android izinleri: yüklü uygulama şu izinleri listeler. <code>com.android.vending.BILLING</code>, uygulamanın tam oyun satın alması için Google Play'e sormasını sağlar. <code>android.permission.INTERNET</code> ve <code>android.permission.ACCESS_NETWORK_STATE</code> Google'ın Play Billing kütüphanesi tarafından eklenir; kütüphane bunları Google ile kendi iletişimi için kullanır. Bade Mahjong'un kendi kodu ağ isteği yapmaz ve konuşacağı bize ait bir sunucu yoktur. Geriye kalan, Android'in kendi destek kitaplığının uygulamanın yayın alıcılarını korumak için eklediği dahili bir izindir. Hiçbiri uygulamaya kişilerinize, konumunuza, fotoğraflarınıza, dosyalarınıza, mikrofona, kameraya ya da reklam kimliğinize erişim vermez ve hiçbirini onaylamanız istenmez: uygulamayı yüklediğinizde Android bunları kendiliğinden verir.</p>
   <p><strong>Deneme özetini kopyalama.</strong> Ayarlar › Deneme özeti'nde yukarıdaki özeti telefonunuzun panosuna kopyalayan bir düğme vardır. Siz bu düğmeye basıp metni kendiniz bir yere yapıştırmadıkça hiçbir şey uygulamadan çıkmaz.</p>
 
   <h3>3. Reklam ve satın alma</h3>
-  <p>Bu sürüm reklam göstermez ve hiçbir şey satmaz. Reklam, ödeme, analiz veya çökme raporlama kitaplığı içermez.</p>
-  <p><strong>Bu değişirse.</strong> Sonraki bir sürüm satın alma, reklam veya başka bir veri işleme eklerse, bu politika ve mağazadaki veri beyanları o sürüm yayımlanmadan önce güncellenir. Satın alma eklenirse Google Play üzerinden yapılır.</p>
+  <p>Bu sürüm reklam göstermez. İlk 60 bölüm ücretsizdir. Google Play üzerinden yapılan, isteğe bağlı ve tek seferlik bir uygulama içi satın alma ("Tam sürüm" adıyla görünür) 3.000 bölümün hepsini açar. Bu bir abonelik değildir: hiçbir şey yenilenmez ve bir daha ücret alınmaz.</p>
+  <p><strong>Satın alma nasıl işler.</strong> Satın almayı seçtiğinizde Google Play kendi satın alma ekranını gösterir ve ödemeyi Google'ın koşulları ve <a href="https://policies.google.com/privacy" rel="noopener">gizlilik politikası</a> kapsamında yürütür. Uygulama yalnız, satın almanın tamamlandığına dair Google Play'den cihazınızda bir onay alır. Bu yoldan kart veya ödeme bilgilerinizi, adınızı ya da e-posta adresinizi görmeyiz ve satın alma bilgisini alan bir sunucu işletmeyiz. Uygulama satın almayı Google Play'e onaylar ("acknowledge") ve bölüm 2'de anlatılan tek "açık" bayrağını saklar. Bayrak bize ait hiçbir hesaba bağlı değildir.</p>
+  <p><strong>Geri yükleme.</strong> "Satın alımı geri yükle", Google hesabınızın tam oyuna zaten sahip olup olmadığını Google Play'e sorar; böylece yeni bir telefonda ya da uygulama verilerini temizledikten sonra tekrar açabilirsiniz. Bunun için internet bağlantısı gerekir; bölümleri oynamak için gerekmez.</p>
+  <p><strong>Google'ın Play Billing kütüphanesi.</strong> Bu, uygulamanın içine gömülü Google kodudur. Google Play uygulamasıyla konuşmanın yanında, Google Gizlilik Politikası'nda anlatıldığı gibi kendi teknik ve kullanım bilgilerini Google'a gönderebilir. Bu bilgileri biz almayız ve denetlemeyiz.</p>
+  <p><strong>İade ve ödeme soruları</strong> Google Play'in iade politikası kapsamında Google Play tarafından yürütülür. Satın almalarınızı göremez ya da değiştiremeyiz.</p>
+  <p><strong>Bu değişirse.</strong> Sonraki bir sürüm reklam, abonelik veya başka bir veri işleme eklerse, bu politika ve mağazadaki veri beyanları o sürüm yayımlanmadan önce güncellenir.</p>
 
   <h3>4. Yedekler ve verilerinizin silinmesi</h3>
   <p>Uygulama Android'in yedekleme özelliğini kapatmaz. Cihazınıza, Android sürümünüze ve ayarlarınıza bağlı olarak uygulama verileriniz Google'ın veya cihaz üreticinizin tuttuğu bir yedeğe dahil edilebilir ve yeni bir cihazda geri yüklenebilir. Bu yedekleri biz denetlemeyiz ve onlara erişimimiz yoktur.</p>
-  <p>Oyun verileri cihazınızda durduğu için onları siz silersiniz: Android Ayarlar → Uygulamalar → Bade Mahjong → Depolama → Verileri temizle yolunu izleyin ya da uygulamayı kaldırın. Bu, ilerlemenizi, ayarlarınızı ve deneme özetini siler. Yedek kopyalar Google hesabınızın veya cihaz üreticinizin yedekleme ayarlarından yönetilir. Bu sürümde uygulama içinde bir silme düğmesi yoktur.</p>
+  <p>Oyun verileri cihazınızda durduğu için onları siz silersiniz: Android Ayarlar → Uygulamalar → Bade Mahjong → Depolama → Verileri temizle yolunu izleyin ya da uygulamayı kaldırın. Bu, ilerlemenizi, ayarlarınızı, deneme özetini ve "açık" bayrağını siler. Tam oyunu satın aldıysanız, sonrasında "Satın alımı geri yükle" ile ek ücret ödemeden yeniden açabilirsiniz; satın almanın kendisi Google hesabınıza aittir ve veri temizlemek ya da uygulamayı kaldırmakla silinmez. Yedek kopyalar Google hesabınızın veya cihaz üreticinizin yedekleme ayarlarından yönetilir. Bu sürümde uygulama içinde bir silme düğmesi yoktur.</p>
 
   <h3>5. Yaş</h3>
   <p>Bade Mahjong yetişkin oyuncular düşünülerek yapılmış genel bir bulmaca oyunudur ve çocuklara yönelik değildir. Çocuklar da dahil hiç kimseden kişisel bilgi girmesini istemez. Ebeveyn veya vasiyseniz ve bir çocuğun bize, örneğin e-postayla, kişisel bilgi gönderdiğini düşünüyorsanız, talebi inceleyebilmemiz için yukarıdaki e-posta adresinden bize yazın.</p>
@@ -149,13 +159,13 @@
   <p>Bize yazarsanız e-posta adresinizi, hesabınızda görünen adı, mesajınızı ve eklediğiniz her şeyi alırız. Bunları yalnız mesajınızı okumak, yanıtlamak ve talebinizi karşılamak için kullanırız. E-posta, yayıncının Google tarafından sağlanan e-posta hesabında tutulur (bkz. <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>). Talebi karşılamak ve kaydını tutmak için gerektiği sürece saklar, artık gerekmediğinde sileriz. Sabit bir gün sayısı belirlemedik. Lütfen hassas kişisel bilgi göndermeyin; oyun kaydınızı bize göndermeniz hiçbir zaman gerekmez.</p>
 
   <h3>8. Seçimleriniz ve haklarınız</h3>
-  <p>Oyun verilerinizi biz tutmadığımız için onlarla ilgili bakabileceğimiz veya silebileceğimiz bir şey yoktur; yukarıda anlatıldığı gibi onları cihazınızda siz yönetirsiniz. Bize gönderdiğiniz e-postalar için elimizde ne tuttuğumuzu söylememizi veya silmemizi isteyebilirsiniz. Yaşadığınız yere göre yerel hukuk size ek haklar tanıyabilir; bu sayfa yayıncıya hangi hukukun uygulanacağını belirtmez.</p>
+  <p>Oyun verilerinizi biz tutmadığımız için onlarla ilgili bakabileceğimiz veya silebileceğimiz bir şey yoktur; yukarıda anlatıldığı gibi onları cihazınızda siz yönetirsiniz. Bize gönderdiğiniz e-postalar için elimizde ne tuttuğumuzu söylememizi veya silmemizi isteyebilirsiniz. Yaşadığınız yere göre yerel hukuk size ek haklar tanıyabilir; bu sayfa yayıncıya hangi hukukun uygulanacağını belirtmez. Satın alma kayıtlarını Google, Google hesabınız altında tutar; bunlara erişim ya da silme için Google'a başvurun.</p>
 
   <h3>9. Güvenlik</h3>
   <p>Verileriniz uygulamanın özel depolama alanında, Android'in uygulama yalıtımıyla korunarak kalır. Hiçbir saklama veya aktarım yöntemi tamamen güvenli değildir ve mutlak güvenlik garantisi vermiyoruz.</p>
 
   <h3>10. Üçüncü taraf hizmetler</h3>
-  <p>Google Play (uygulamayı yükleme ve güncelleme, yedekleme) ve GitHub (bu sayfanın barındırılması) kendi gizlilik koşulları olan ayrı hizmetlerdir: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Genel Gizlilik Beyanı</a>.</p>
+  <p>Google Play (uygulamayı yükleme ve güncelleme, yedekleme ve Google Play Billing ile isteğe bağlı satın alma) ve GitHub (bu sayfanın barındırılması) kendi gizlilik koşulları olan ayrı hizmetlerdir: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Genel Gizlilik Beyanı</a>.</p>
 
   <h3>11. Bu politikadaki değişiklikler</h3>
   <p>Bu politikayı değiştirdiğimizde sayfanın üstündeki tarihi güncelleriz. Veri toplama, reklam veya satın alma ekleyen değişiklikler, bunları getiren sürüm yayımlanmadan önce yayımlanır.</p>
