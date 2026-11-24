@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fairdeck Cribbage – Privacy Policy / Politique de confidentialité / Datenschutzerklärung</title>
+<meta name="description" content="Privacy policy for the Fairdeck Cribbage Android game by AkoTech (English, Français, Deutsch). Politique de confidentialité (français) et Datenschutzerklärung (Deutsch).">
+<!--
+  Source of this page: fairdeck-cribbage/privacy/index.html in
+  aknkaplanoglu/akotech-app-policies (GitHub Pages). Same layout as the
+  Slow Glass and Bade Mahjong pages. Static page: no scripts, no external
+  requests, no web fonts, no analytics.
+
+  TODO(FDK-TEK-02): when Firebase Analytics / Crashlytics (or any other
+  analytics or crash SDK) is added, rewrite the "Analytics and crash reports"
+  section in all three languages, section 2, and the Play Data safety
+  form BEFORE shipping that update.
+-->
+<style>
+  :root { color-scheme: light dark; --bg:#ffffff; --fg:#1b1b1f; --muted:#4a4a55; --accent:#0b4f8a; --line:#c9c9d3; --card:#f4f5f8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14141a; --fg:#ececf1; --muted:#b4b4c0; --accent:#8ec1f5; --line:#3a3a46; --card:#1f1f27; } }
+  html { font-size: 100%; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height:1.6; }
+  main, header, footer { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+  header { padding-top: 1.5rem; }
+  h1 { font-size: 1.75rem; line-height:1.25; margin: .25rem 0 .5rem; }
+  h2 { font-size: 1.3rem; margin: 2.2rem 0 .5rem; border-top:1px solid var(--line); padding-top:1.2rem; }
+  h3 { font-size: 1.05rem; margin: 1.4rem 0 .3rem; }
+  p, li { margin: .5rem 0; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .skip { position:absolute; left:-999px; top:0; background:var(--card); padding:.5rem 1rem; }
+  .skip:focus { left: 0; z-index: 10; }
+  nav.lang { display:flex; gap:.75rem; flex-wrap:wrap; margin:1rem 0; }
+  nav.lang a { display:inline-block; min-height:44px; line-height:44px; padding:0 1rem; border:1px solid var(--line); border-radius:.5rem; text-decoration:none; background:var(--card); }
+  .meta { color:var(--muted); font-size:.95rem; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:.6rem; padding:.6rem 1rem; margin:1rem 0; }
+  table { border-collapse: collapse; width:100%; margin:.75rem 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; border:1px solid var(--line); padding:.45rem .6rem; }
+  th { background:var(--card); }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size:.9em; overflow-wrap:anywhere; }
+  footer { padding-bottom: 3rem; color:var(--muted); font-size:.9rem; }
+  @media (max-width: 36rem) { h1 { font-size:1.5rem; } table, thead, tbody, tr, th, td { display:block; } thead { position:absolute; left:-999px; } td { border-top:0; } tr { margin-bottom:.75rem; border-top:1px solid var(--line); } }
+</style>
+</head>
+<body>
+<a class="skip" href="#en">Skip to English / Aller au français / Zu Deutsch springen</a>
+<header>
+  <p class="meta">AkoTech</p>
+  <h1>Fairdeck Cribbage – Privacy Policy<br><span lang="fr">Fairdeck Cribbage – Politique de confidentialité</span><br><span lang="de">Fairdeck Cribbage – Datenschutzerklärung</span></h1>
+  <nav class="lang" aria-label="Language / Langue / Sprache">
+    <a href="#en" hreflang="en" lang="en">English</a>
+    <a href="#fr" hreflang="fr" lang="fr">Français</a>
+    <a href="#de" hreflang="de" lang="de">Deutsch</a>
+  </nav>
+</header>
+<main>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en" lang="en" aria-labelledby="en-title">
+  <h2 id="en-title">English</h2>
+  <p class="meta">Last updated: 25 November 2026. Applies to: Fairdeck Cribbage for Android, from version 1.0.0, package <code>com.akotech.fairdeck.cribbage</code>. Publisher: AkoTech. The English text is the authoritative one; the French and German texts are translations for convenience. If they differ, the English text prevails.</p>
+
+  <div class="box" role="note">
+    <strong>In short.</strong> Fairdeck Cribbage keeps your game progress and settings on your own device. It has no account or sign-in, no developer-operated server, and no analytics or crash-reporting code of our own. The whole game, including every game against the computer, works without an internet connection. The app does show ads (Google AdMob), and it offers two optional one-time purchases through Google Play. Those two Google services process some data about your device, as described in sections 3 and 4. Where the law requires it, the app asks for your consent to ads first. You can remove all ads with a one-time purchase. You can contact us at the e-mail address below.
+  </div>
+
+  <h3>1. Who we are and how to contact us</h3>
+  <p>Fairdeck Cribbage is published by AkoTech. Privacy questions and requests: <a href="mailto:akn.kaplanoglu@gmail.com">akn.kaplanoglu@gmail.com</a>. This is the only public contact channel. This page does not state a postal address or country of establishment.</p>
+
+  <h3>2. What the app stores on your device</h3>
+  <p>The app saves the following on your device only. The game progress is kept as files in the app's private Android storage, the settings and the purchase copy as app preferences; other apps cannot read them. The app does not add its own encryption to them.</p>
+  <table>
+    <thead><tr><th>What</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>The game in progress</td><td>So it survives a phone call or a closed app, and you can continue where you left off.</td></tr>
+      <tr><td>Statistics, Daily Deal results and your streak</td><td>Shown to you in the app.</td></tr>
+      <tr><td>Settings: difficulty, game length, rules, speed and display options, sound, card back, board, theme and language</td><td>To remember your choices.</td></tr>
+      <tr><td>A copy of which purchases your Google account owns ("remove ads", "theme pack")</td><td>So they still apply at the next start without a connection.</td></tr>
+      <tr><td>Counters for the ads: the date of the first start, how many games you finished, how many ads were shown today and when the last one was shown</td><td>To space ads out, for example to keep the first games ad-free (section 3).</td></tr>
+      <tr><td>The number of free discard hints used today and of hints earned with an optional ad</td><td>To enforce the daily allowance of hints.</td></tr>
+      <tr><td>The date when the app last asked Google Play to show its rating card</td><td>So the card is not asked for again too soon (section 4).</td></tr>
+    </tbody>
+  </table>
+  <p>The deals of the Daily Deal come from the date, and the seed of a deal is generated on your device. None of this is sent to us. The app does not ask for or store your name, e-mail address, birth date, phone number, contacts, location, photos, files, microphone or camera data, or any account identifier.</p>
+  <p><strong>Copying a replay code.</strong> On the deal record screen, a button copies a replay code for that deal to your phone's clipboard. Nothing leaves the app unless you press it and then paste the text somewhere yourself.</p>
+  <p><strong>Opening this page.</strong> The "Privacy policy" row in Settings opens this page in your phone's web browser. The app does not show web pages inside itself.</p>
+  <p><strong>Android permissions.</strong> The installed app lists these permissions:</p>
+  <ul>
+    <li><code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code>: used by Google's ads and Play Billing libraries to talk to Google. Fairdeck's own code makes no network requests and there is no server of ours for it to talk to.</li>
+    <li><code>com.android.vending.BILLING</code>: lets the app ask Google Play about the optional purchases.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code> and <code>android.permission.ACCESS_ADSERVICES_TOPICS</code>: added by Google's ads library, so that ads can use the Android advertising ID and Android's ad services (section 3).</li>
+    <li><code>android.permission.WAKE_LOCK</code> and <code>android.permission.FOREGROUND_SERVICE</code>: added by Google's libraries for their background work.</li>
+    <li>An internal permission, <code>com.akotech.fairdeck.cribbage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, which Android's own support library adds to protect the app's broadcast receivers.</li>
+  </ul>
+  <p>None of them gives the app access to your contacts, location, photos, files, microphone or camera, and you are not asked to approve any of them: Android grants them when you install the app. Google's rating card needs no permission of its own, because the Google Play app shows it.</p>
+
+  <h3>3. Ads (Google AdMob) and your consent</h3>
+  <p>The app shows ads served by Google AdMob. Two kinds exist:</p>
+  <ul>
+    <li><strong>A full-screen ad between games.</strong> It can appear only when you tap "New game" on the game-over screen. Never while a hand is being played and never when the app opens. At most one per game. Currently the first two finished games are ad-free, no ad is shown in the first 15 minutes after the first start, at least 5 minutes pass between two ads, and at most 6 are shown per day.</li>
+    <li><strong>An optional ad for one extra discard hint.</strong> You get 3 free discard hints per day. When they are used up, the game-over screen of a game against the computer offers "Watch a short ad for a hint", which earns one hint for a later hand. The ad starts only if you tap that button; one ad gives one hint.</li>
+  </ul>
+  <p>The one-time purchase "Remove ads" (section 4) removes all ads and makes discard hints unlimited. If you own it, the app does not ask for consent and does not request ads.</p>
+  <p><strong>What AdMob may collect.</strong> To serve and measure ads, the AdMob SDK (Google LLC or Google Ireland Limited, depending on where you are) may collect and process:</p>
+  <ul>
+    <li>your Android advertising ID, which you can reset or delete in your phone's settings;</li>
+    <li>device and app information such as device model, operating system version, language, app version and approximate location derived from your IP address;</li>
+    <li>your IP address, information about ad interactions (impressions, clicks, whether a video ad was watched to the end), and diagnostic information such as crashes and performance of the ads code.</li>
+  </ul>
+  <p>The app starts the ads library shortly after it opens (unless you own "Remove ads"), also before the first ad is shown, so Google may receive this information from then on. The app sends Google no information about your game, no keywords and no location of its own. We do not receive your advertising ID, and we do not receive a profile of you. Google's handling of the data is described in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a> and in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+  <p><strong>Consent.</strong> Where the law requires it (for example in the European Economic Area and the United Kingdom), the app shows Google's consent form (built on Google's User Messaging Platform, a certified consent management platform) when you first start the app and before it requests any ad. Depending on your answers, the app then requests only limited or non-personalised ads, or no ads at all; Google's form decides which. In those regions you can review or change your choice at any time: <em>Settings → Privacy → Ad consent settings</em>. This row is shown only where the form applies. Elsewhere, you can control ad personalisation in your Google account and in Android settings (<em>Settings → Google → Ads</em>), where you can also reset or delete your advertising ID.</p>
+
+  <h3>4. Purchases (Google Play Billing) and the rating card</h3>
+  <p>Two optional, one-time in-app purchases exist, made through Google Play: "Remove ads" and "Theme pack" (extra boards and card backs). They are not subscriptions: nothing renews and nothing is charged again.</p>
+  <p><strong>How a purchase works.</strong> When you choose to buy, Google Play shows its own purchase screen and processes the payment under Google's terms and <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>. The app only receives a confirmation from Google Play, on your device, that the purchase is complete. We never see your card or payment details, your name or your e-mail address through this, and we run no server that receives purchase information. The app confirms ("acknowledges") the purchase to Google Play and keeps the copy of what you own described in section 2. The copy is not tied to any account of ours.</p>
+  <p><strong>Restoring.</strong> Each time the app starts, and when you tap "Restore purchases" in the store, the app asks Google Play which purchases your Google account owns, so they work on a new phone and a refunded purchase stops working. This needs an internet connection; playing does not, and nothing changes if Google Play does not answer.</p>
+  <p><strong>Google's Play Billing library.</strong> This is Google's code, built into the app. Besides talking to the Google Play app, it may send its own technical and usage information to Google, as described in the Google Privacy Policy. We do not receive or control that information. Refunds and payment questions are handled by Google Play under its refund policy; we cannot see or change your purchases.</p>
+  <p><strong>Rating card.</strong> After you have won a game against the computer, once at least 5 games are finished and at most once every 60 days, the app may ask Google Play to show its own rating card. Google Play decides whether the card appears and draws it; you can rate or close it without leaving the app. The app does not see your rating or any text you write, and nothing is sent to us. Google's privacy policy applies to the card.</p>
+
+  <h3>5. Backups and deleting your data</h3>
+  <p>The app allows Android's backup and device-transfer features. When they are turned on, Android may copy the following to your Google account, or to a new phone when you move: the game and statistics files (<code>progress.json</code> and its safety copy), and the app preferences (settings and the copy of your purchases). All of the app's preference files are included, which can also contain choices stored by Google's libraries, such as your ad consent choices. Only three files of the ads library and Google Play services (<code>admob.xml</code>, <code>com.google.android.gms.ads.xml</code> and <code>com.google.android.gms.appid.xml</code>) are excluded. The backup is held by Google under your Google account, not on a server of ours, and we have no access to it. You control it in Android under <em>Settings → Google → Backup</em> (the wording varies by phone) and you can delete it there.</p>
+  <p>Because the game data lives on your device, you delete it yourself: open Android Settings → Apps → Fairdeck Cribbage → Storage → Clear storage, or uninstall the app. This removes your game, statistics, settings and the counters described in section 2. Purchases belong to your Google account and are not removed by clearing data or uninstalling; the app finds them again at the next start, at no extra charge. There is no in-app delete button in this version.</p>
+
+  <h3>6. Analytics and crash reports</h3>
+  <p>The app has no analytics or crash-reporting code of our own, and we do not collect usage statistics or crash reports from inside the app. If you use Google Play, Google may provide us, as the developer, with aggregated and anonymised statistics such as installs, uninstalls, ratings and crash or "not responding" counts, under Google's own terms and your Google Play settings. The ads library described in section 3 collects its own diagnostics for Google; we do not receive them.</p>
+
+  <h3>7. What we do not do</h3>
+  <ul>
+    <li>We do not sell your data.</li>
+    <li>We do not ask for your contacts, camera, microphone, photos or precise location.</li>
+    <li>We run no accounts, so there is nothing to log in to or delete on our side.</li>
+  </ul>
+  <p>This does not mean that no data is processed: the ad and billing services in sections 3 and 4 do process the data described there.</p>
+
+  <h3>8. Age</h3>
+  <p>Fairdeck Cribbage is a card game made for adults. It is not directed at children, and its target audience is 18 and over. It does not ask anyone, including children, to enter personal information. If you are a parent or guardian and believe a child has sent us personal information, for example by e-mail, contact us at the e-mail address above so we can review the request. You can also reset the advertising ID in your phone's settings.</p>
+
+  <h3>9. This website</h3>
+  <p>This page is hosted on GitHub Pages. When you open it, GitHub may process technical data such as your IP address, browser and device details and request logs under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>. This is separate from the app. We do not add analytics, cookies, scripts or external fonts to this page, and we do not run any tracking on it.</p>
+
+  <h3>10. If you e-mail us</h3>
+  <p>If you write to us, we receive your e-mail address, the name shown on your account, your message and anything else you include. We use it only to read and answer your message and to handle your request. The e-mail is held in the publisher's e-mail account, which is provided by Google (see the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>). We keep it for as long as needed to handle the request and keep a record of it, and then delete it when it is no longer needed. We have not set a fixed number of days. Please do not send sensitive personal information; you never need to send us your game data.</p>
+
+  <h3>11. Your choices and rights</h3>
+  <ul>
+    <li>Review or change your ad consent in <em>Settings → Privacy → Ad consent settings</em> where the row is shown.</li>
+    <li>Reset or delete your advertising ID, and manage ad personalisation, in Android settings.</li>
+    <li>Remove all ads with the one-time purchase "Remove ads".</li>
+    <li>Delete the data on your device by clearing the app's storage or uninstalling it.</li>
+  </ul>
+  <p>We do not hold your game data, so there is nothing for us to look up or delete about it; you control it on your device as described above. For e-mails you have sent us, you can ask us to tell you what we hold or to delete it. Depending on where you live (for example under the GDPR or the UK GDPR), local law may give you rights of access, correction, deletion, objection and complaint to a data protection authority; this page does not state which law applies to the publisher. Data held by Google (ads, purchases, backup) is managed through Google's tools, for example at <a href="https://myaccount.google.com/" rel="noopener">myaccount.google.com</a>.</p>
+
+  <h3>12. Security</h3>
+  <p>Your data stays on your device, protected by Android's app sandbox. No method of storage or transmission is completely secure, and we make no guarantee of absolute security.</p>
+
+  <h3>13. Third-party services</h3>
+  <p>Google AdMob and the Google User Messaging Platform (ads and consent), Google Play (installing and updating the app, backup, purchases through Google Play Billing, and the rating card) and GitHub (hosting this page) are separate services with their own privacy terms: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+
+  <h3>14. Changes to this policy</h3>
+  <p>When we change this policy we will update the date at the top of this page. Changes that add data collection, analytics or other services will be published before the version that introduces them is released.</p>
+</section>
+
+<!-- ===================== FRANÇAIS ===================== -->
+<section id="fr" lang="fr" aria-labelledby="fr-title">
+  <h2 id="fr-title">Français</h2>
+  <p class="meta">Dernière mise à jour : 25 novembre 2026. S’applique à : Fairdeck Cribbage pour Android, à partir de la version 1.0.0, package <code>com.akotech.fairdeck.cribbage</code>. Éditeur : AkoTech. Le texte anglais fait foi ; les textes français et allemand sont des traductions de confort. En cas de divergence, le texte anglais prévaut.</p>
+
+  <div class="box" role="note">
+    <strong>En bref.</strong> Fairdeck Cribbage conserve votre progression et vos réglages sur votre propre appareil. Il n’y a ni compte ni connexion, ni serveur exploité par le développeur, ni code d’analyse ou de rapport de plantage de notre part. Tout le jeu, y compris chaque partie contre l’ordinateur, fonctionne sans connexion internet. L’application affiche en revanche des publicités (Google AdMob) et propose deux achats uniques facultatifs via Google Play. Ces deux services de Google traitent certaines données relatives à votre appareil, comme décrit aux sections 3 et 4. Lorsque la loi l’exige, l’application demande d’abord votre consentement aux publicités. Un achat unique permet de supprimer toutes les publicités. Vous pouvez nous écrire à l’adresse e-mail ci-dessous.
+  </div>
+
+  <h3>1. Qui nous sommes et comment nous contacter</h3>
+  <p>Fairdeck Cribbage est publié par AkoTech. Questions et demandes relatives à la confidentialité : <a href="mailto:akn.kaplanoglu@gmail.com">akn.kaplanoglu@gmail.com</a>. C’est le seul canal de contact public. Cette page n’indique ni adresse postale ni pays d’établissement.</p>
+
+  <h3>2. Ce que l’application enregistre sur votre appareil</h3>
+  <p>L’application enregistre ce qui suit uniquement sur votre appareil. La progression du jeu est conservée sous forme de fichiers dans l’espace de stockage privé de l’application sur Android, les réglages et la copie des achats sous forme de préférences de l’application ; les autres applications ne peuvent pas les lire. L’application n’y ajoute pas de chiffrement propre.</p>
+  <table>
+    <thead><tr><th>Quoi</th><th>Pourquoi</th></tr></thead>
+    <tbody>
+      <tr><td>La partie en cours</td><td>Pour qu’elle survive à un appel téléphonique ou à une application fermée, et que vous puissiez reprendre là où vous vous étiez arrêté.</td></tr>
+      <tr><td>Les statistiques, les résultats de la donne du jour et votre série</td><td>Pour vous les afficher dans l’application.</td></tr>
+      <tr><td>Les réglages : difficulté, durée de la partie, règles, vitesse et options d’affichage, son, dos des cartes, plateau, thème et langue</td><td>Pour mémoriser vos choix.</td></tr>
+      <tr><td>Une copie des achats que possède votre compte Google (« supprimer les pubs », « pack de thèmes »)</td><td>Pour qu’ils restent valables au prochain démarrage, même sans connexion.</td></tr>
+      <tr><td>Des compteurs pour les publicités : la date du premier démarrage, le nombre de parties terminées, le nombre de publicités affichées aujourd’hui et le moment de la dernière</td><td>Pour espacer les publicités, par exemple pour garder les premières parties sans pub (section 3).</td></tr>
+      <tr><td>Le nombre d’indices d’écart gratuits utilisés aujourd’hui et d’indices gagnés avec une publicité facultative</td><td>Pour appliquer l’allocation quotidienne d’indices.</td></tr>
+      <tr><td>La date à laquelle l’application a demandé pour la dernière fois à Google Play d’afficher sa fenêtre de notation</td><td>Pour ne pas la redemander trop tôt (section 4).</td></tr>
+    </tbody>
+  </table>
+  <p>La donne du jour est déterminée par la date, et la graine d’une donne est générée sur votre appareil. Rien de tout cela ne nous est envoyé. L’application ne demande ni ne conserve votre nom, adresse e-mail, date de naissance, numéro de téléphone, contacts, position, photos, fichiers, données de microphone ou de caméra, ni aucun identifiant de compte.</p>
+  <p><strong>Copie d’un code de rejeu.</strong> Sur l’écran du relevé d’une donne, un bouton copie un code de rejeu de cette donne dans le presse-papiers de votre téléphone. Rien ne quitte l’application tant que vous n’appuyez pas dessus puis ne collez pas vous-même le texte ailleurs.</p>
+  <p><strong>Ouverture de cette page.</strong> La ligne « Politique de confidentialité » des Paramètres ouvre cette page dans le navigateur web de votre téléphone. L’application n’affiche pas de pages web en son sein.</p>
+  <p><strong>Autorisations Android.</strong> L’application installée déclare les autorisations suivantes :</p>
+  <ul>
+    <li><code>android.permission.INTERNET</code> et <code>android.permission.ACCESS_NETWORK_STATE</code> : utilisées par les bibliothèques de publicité et de Play Billing de Google pour communiquer avec Google. Le code propre de Fairdeck ne fait aucune requête réseau et il n’existe aucun serveur de notre part avec lequel il pourrait communiquer.</li>
+    <li><code>com.android.vending.BILLING</code> : permet à l’application d’interroger Google Play au sujet des achats facultatifs.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code> et <code>android.permission.ACCESS_ADSERVICES_TOPICS</code> : ajoutées par la bibliothèque publicitaire de Google, afin que les publicités puissent utiliser l’identifiant publicitaire Android et les services publicitaires d’Android (section 3).</li>
+    <li><code>android.permission.WAKE_LOCK</code> et <code>android.permission.FOREGROUND_SERVICE</code> : ajoutées par des bibliothèques de Google pour leurs tâches en arrière-plan.</li>
+    <li>Une autorisation interne, <code>com.akotech.fairdeck.cribbage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, que la bibliothèque de support d’Android ajoute pour protéger les récepteurs de diffusion de l’application.</li>
+  </ul>
+  <p>Aucune ne donne à l’application accès à vos contacts, à votre position, à vos photos, à vos fichiers, au microphone ni à la caméra, et aucune ne vous est demandée : Android les accorde à l’installation de l’application. La fenêtre de notation de Google n’a besoin d’aucune autorisation propre, car c’est l’application Google Play qui l’affiche.</p>
+
+  <h3>3. Publicités (Google AdMob) et votre consentement</h3>
+  <p>L’application affiche des publicités diffusées par Google AdMob. Il en existe deux types :</p>
+  <ul>
+    <li><strong>Une publicité plein écran entre deux parties.</strong> Elle ne peut apparaître que lorsque vous touchez « Nouvelle partie » sur l’écran de fin de partie. Jamais pendant une donne et jamais à l’ouverture de l’application. Au plus une par partie. Actuellement, les deux premières parties terminées sont sans publicité, aucune publicité n’est affichée pendant les 15 premières minutes après le premier démarrage, au moins 5 minutes séparent deux publicités et 6 au plus sont affichées par jour.</li>
+    <li><strong>Une publicité facultative pour un indice d’écart supplémentaire.</strong> Vous disposez de 3 indices d’écart gratuits par jour. Lorsqu’ils sont épuisés, l’écran de fin d’une partie contre l’ordinateur propose « Une courte pub pour un indice », qui fait gagner un indice pour une donne ultérieure. La publicité ne démarre que si vous touchez ce bouton ; une publicité donne un indice.</li>
+  </ul>
+  <p>L’achat unique « Retirer les pubs » (section 4) supprime toutes les publicités et rend les indices d’écart illimités. Si vous le possédez, l’application ne demande pas de consentement et ne demande pas de publicités.</p>
+  <p><strong>Ce qu’AdMob peut collecter.</strong> Pour diffuser et mesurer les publicités, le SDK AdMob (Google LLC ou Google Ireland Limited, selon l’endroit où vous vous trouvez) peut collecter et traiter :</p>
+  <ul>
+    <li>votre identifiant publicitaire Android, que vous pouvez réinitialiser ou supprimer dans les réglages de votre téléphone ;</li>
+    <li>des informations sur l’appareil et l’application, telles que le modèle de l’appareil, la version du système d’exploitation, la langue, la version de l’application et une position approximative déduite de votre adresse IP ;</li>
+    <li>votre adresse IP, des informations sur les interactions avec les publicités (affichages, clics, visionnage d’une vidéo jusqu’au bout) et des informations de diagnostic telles que les plantages et les performances du code publicitaire.</li>
+  </ul>
+  <p>L’application démarre la bibliothèque publicitaire peu après son ouverture (sauf si vous possédez « Retirer les pubs »), donc aussi avant l’affichage de la première publicité ; Google peut donc recevoir ces informations dès ce moment. L’application n’envoie à Google aucune information sur votre partie, aucun mot-clé et aucune position de sa part. Nous ne recevons ni votre identifiant publicitaire ni un profil de vous. Le traitement des données par Google est décrit dans <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Comment Google utilise les informations provenant de sites ou d’applications qui utilisent nos services</a> et dans les <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a>.</p>
+  <p><strong>Consentement.</strong> Lorsque la loi l’exige (par exemple dans l’Espace économique européen et au Royaume-Uni), l’application affiche le formulaire de consentement de Google (fondé sur la User Messaging Platform de Google, une plateforme de gestion du consentement certifiée) au premier démarrage et avant toute demande de publicité. Selon vos réponses, l’application ne demande ensuite que des publicités limitées ou non personnalisées, ou aucune publicité ; c’est le formulaire de Google qui en décide. Dans ces régions, vous pouvez consulter ou modifier votre choix à tout moment : <em>Paramètres → Confidentialité → Choix de consentement aux pubs</em>. Cette ligne n’apparaît que là où le formulaire s’applique. Ailleurs, vous pouvez gérer la personnalisation des publicités dans votre compte Google et dans les paramètres d’Android (<em>Paramètres → Google → Annonces</em>), où vous pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire.</p>
+
+  <h3>4. Achats (Google Play Billing) et fenêtre de notation</h3>
+  <p>Il existe deux achats intégrés facultatifs et uniques, effectués via Google Play : « Retirer les pubs » et « Pack de thèmes » (plateaux et dos de cartes supplémentaires). Ce ne sont pas des abonnements : rien ne se renouvelle et rien n’est débité de nouveau.</p>
+  <p><strong>Comment fonctionne un achat.</strong> Lorsque vous choisissez d’acheter, Google Play affiche son propre écran d’achat et traite le paiement selon les conditions et la <a href="https://policies.google.com/privacy" rel="noopener">politique de confidentialité</a> de Google. L’application reçoit seulement de Google Play, sur votre appareil, la confirmation que l’achat est terminé. Nous ne voyons jamais, par ce biais, votre carte ni vos données de paiement, votre nom ou votre adresse e-mail, et nous n’exploitons aucun serveur qui reçoive des informations d’achat. L’application confirme (« acknowledge ») l’achat auprès de Google Play et conserve la copie de ce que vous possédez, décrite à la section 2. Cette copie n’est liée à aucun compte de notre part.</p>
+  <p><strong>Restauration.</strong> À chaque démarrage, et lorsque vous touchez « Restaurer les achats » dans la boutique, l’application demande à Google Play quels achats votre compte Google possède, afin qu’ils fonctionnent sur un nouveau téléphone et qu’un achat remboursé cesse de fonctionner. Cela nécessite une connexion internet ; jouer n’en nécessite pas, et rien ne change si Google Play ne répond pas.</p>
+  <p><strong>La bibliothèque Play Billing de Google.</strong> Il s’agit d’un code de Google intégré à l’application. En plus de communiquer avec l’application Google Play, elle peut envoyer à Google ses propres informations techniques et d’utilisation, comme décrit dans les Règles de confidentialité de Google. Nous ne recevons ni ne contrôlons ces informations. Les remboursements et les questions de paiement sont traités par Google Play selon sa politique de remboursement ; nous ne pouvons ni voir ni modifier vos achats.</p>
+  <p><strong>Fenêtre de notation.</strong> Après une victoire contre l’ordinateur, lorsqu’au moins 5 parties sont terminées et au plus une fois tous les 60 jours, l’application peut demander à Google Play d’afficher sa propre fenêtre de notation. Google Play décide si elle apparaît et l’affiche lui-même ; vous pouvez noter ou fermer la fenêtre sans quitter l’application. L’application ne voit ni votre note ni le texte que vous écrivez, et rien ne nous est envoyé. La politique de confidentialité de Google s’applique à cette fenêtre.</p>
+
+  <h3>5. Sauvegardes et suppression de vos données</h3>
+  <p>L’application autorise les fonctions de sauvegarde et de transfert d’appareil d’Android. Lorsqu’elles sont activées, Android peut copier ce qui suit vers votre compte Google, ou vers un nouveau téléphone lorsque vous en changez : les fichiers de la partie et des statistiques (<code>progress.json</code> et sa copie de sécurité) ainsi que les préférences de l’application (réglages et copie de vos achats). Tous les fichiers de préférences de l’application sont inclus, y compris ceux qui peuvent contenir des choix enregistrés par des bibliothèques de Google, comme vos choix de consentement aux publicités. Seuls trois fichiers de la bibliothèque publicitaire et des services Google Play (<code>admob.xml</code>, <code>com.google.android.gms.ads.xml</code> et <code>com.google.android.gms.appid.xml</code>) sont exclus. La sauvegarde est conservée par Google dans votre compte Google, pas sur un serveur de notre part, et nous n’y avons pas accès. Vous la gérez dans Android sous <em>Paramètres → Google → Sauvegarde</em> (les intitulés varient selon le téléphone) et vous pouvez l’y supprimer.</p>
+  <p>Comme les données du jeu se trouvent sur votre appareil, vous les supprimez vous-même : ouvrez Paramètres Android → Applications → Fairdeck Cribbage → Stockage → Effacer le stockage, ou désinstallez l’application. Cela supprime votre partie, vos statistiques, vos réglages et les compteurs décrits à la section 2. Les achats appartiennent à votre compte Google et ne sont pas supprimés par l’effacement des données ni par la désinstallation ; l’application les retrouve au démarrage suivant, sans frais supplémentaires. Cette version ne comporte pas de bouton de suppression dans l’application.</p>
+
+  <h3>6. Analyses et rapports de plantage</h3>
+  <p>L’application ne contient aucun code d’analyse ou de rapport de plantage de notre part, et nous ne collectons ni statistiques d’utilisation ni rapports de plantage depuis l’application. Si vous utilisez Google Play, Google peut nous fournir, en tant que développeur, des statistiques agrégées et anonymisées telles que les installations, désinstallations, notes et nombres de plantages ou de « pas de réponse », selon les conditions de Google et vos paramètres Google Play. La bibliothèque publicitaire décrite à la section 3 collecte ses propres données de diagnostic pour Google ; nous ne les recevons pas.</p>
+
+  <h3>7. Ce que nous ne faisons pas</h3>
+  <ul>
+    <li>Nous ne vendons pas vos données.</li>
+    <li>Nous ne demandons pas vos contacts, votre caméra, votre microphone, vos photos ni votre position précise.</li>
+    <li>Nous n’exploitons pas de comptes ; il n’y a donc rien à quoi se connecter ni rien à supprimer de notre côté.</li>
+  </ul>
+  <p>Cela ne signifie pas qu’aucune donnée n’est traitée : les services de publicité et de facturation des sections 3 et 4 traitent bien les données qui y sont décrites.</p>
+
+  <h3>8. Âge</h3>
+  <p>Fairdeck Cribbage est un jeu de cartes conçu pour les adultes. Il ne s’adresse pas aux enfants et son public cible a 18 ans ou plus. Il ne demande à personne, enfants compris, de saisir des informations personnelles. Si vous êtes parent ou tuteur et pensez qu’un enfant nous a envoyé des informations personnelles, par exemple par e-mail, écrivez-nous à l’adresse ci-dessus afin que nous examinions la demande. Vous pouvez aussi réinitialiser l’identifiant publicitaire dans les réglages de votre téléphone.</p>
+
+  <h3>9. Ce site web</h3>
+  <p>Cette page est hébergée sur GitHub Pages. Lorsque vous l’ouvrez, GitHub peut traiter des données techniques telles que votre adresse IP, des informations sur le navigateur et l’appareil et des journaux de requêtes, selon la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">déclaration générale de confidentialité de GitHub</a> (en anglais). Cela est distinct de l’application. Nous n’ajoutons à cette page ni outil d’analyse, ni cookies, ni scripts, ni polices externes, et nous n’y exécutons aucun suivi.</p>
+
+  <h3>10. Si vous nous écrivez</h3>
+  <p>Si vous nous écrivez, nous recevons votre adresse e-mail, le nom affiché sur votre compte, votre message et tout ce que vous y joignez. Nous ne l’utilisons que pour lire et répondre à votre message et pour traiter votre demande. L’e-mail est conservé dans la boîte e-mail de l’éditeur, fournie par Google (voir les <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a>). Nous le conservons le temps nécessaire pour traiter la demande et en garder une trace, puis nous le supprimons lorsqu’il n’est plus nécessaire. Nous n’avons pas fixé de nombre de jours précis. Merci de ne pas envoyer d’informations personnelles sensibles ; vous n’avez jamais besoin de nous envoyer vos données de jeu.</p>
+
+  <h3>11. Vos choix et vos droits</h3>
+  <ul>
+    <li>Consultez ou modifiez votre consentement aux publicités dans <em>Paramètres → Confidentialité → Choix de consentement aux pubs</em>, là où cette ligne apparaît.</li>
+    <li>Réinitialisez ou supprimez votre identifiant publicitaire, et gérez la personnalisation des publicités, dans les paramètres d’Android.</li>
+    <li>Supprimez toutes les publicités avec l’achat unique « Retirer les pubs ».</li>
+    <li>Supprimez les données sur votre appareil en effaçant le stockage de l’application ou en la désinstallant.</li>
+  </ul>
+  <p>Nous ne détenons pas les données de votre jeu ; il n’y a donc rien à consulter ou à supprimer de notre côté ; vous les gérez sur votre appareil comme décrit ci-dessus. Pour les e-mails que vous nous avez envoyés, vous pouvez nous demander ce que nous conservons ou de le supprimer. Selon votre lieu de résidence (par exemple au titre du RGPD ou du RGPD britannique), la loi locale peut vous accorder des droits d’accès, de rectification, d’effacement, d’opposition et de réclamation auprès d’une autorité de protection des données ; cette page n’indique pas quelle loi s’applique à l’éditeur. Les données détenues par Google (publicités, achats, sauvegarde) se gèrent avec les outils de Google, par exemple sur <a href="https://myaccount.google.com/" rel="noopener">myaccount.google.com</a>.</p>
+
+  <h3>12. Sécurité</h3>
+  <p>Vos données restent sur votre appareil, protégées par l’isolation des applications d’Android. Aucune méthode de stockage ou de transmission n’est totalement sûre, et nous ne donnons aucune garantie de sécurité absolue.</p>
+
+  <h3>13. Services tiers</h3>
+  <p>Google AdMob et la Google User Messaging Platform (publicités et consentement), Google Play (installation et mises à jour de l’application, sauvegarde, achats via Google Play Billing et fenêtre de notation) et GitHub (hébergement de cette page) sont des services distincts, avec leurs propres conditions de confidentialité : <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a> et <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">déclaration générale de confidentialité de GitHub</a>.</p>
+
+  <h3>14. Modifications de cette politique</h3>
+  <p>Lorsque nous modifions cette politique, nous mettons à jour la date en haut de cette page. Les modifications qui ajoutent une collecte de données, des outils d’analyse ou d’autres services seront publiées avant la sortie de la version qui les introduit.</p>
+</section>
+
+<!-- ===================== DEUTSCH ===================== -->
+<section id="de" lang="de" aria-labelledby="de-title">
+  <h2 id="de-title">Deutsch</h2>
+  <p class="meta">Zuletzt aktualisiert: 25. November 2026. Gilt für: Fairdeck Cribbage für Android, ab Version 1.0.0, Paketname <code>com.akotech.fairdeck.cribbage</code>. Herausgeber: AkoTech. Maßgeblich ist der englische Text; der französische und der deutsche Text sind Übersetzungen zur Erleichterung. Bei Abweichungen gilt der englische Text.</p>
+
+  <div class="box" role="note">
+    <strong>Kurz gesagt.</strong> Fairdeck Cribbage speichert deinen Spielfortschritt und deine Einstellungen auf deinem eigenen Gerät. Es gibt kein Konto und keine Anmeldung, keinen vom Entwickler betriebenen Server und keinen eigenen Code für Analysen oder Absturzberichte. Das ganze Spiel, auch jede Partie gegen den Computer, funktioniert ohne Internetverbindung. Die App zeigt allerdings Werbung (Google AdMob) und bietet zwei freiwillige Einmalkäufe über Google Play an. Diese beiden Google-Dienste verarbeiten einige Daten über dein Gerät, wie in den Abschnitten 3 und 4 beschrieben. Wo das Gesetz es verlangt, fragt die App zuerst nach deiner Einwilligung zur Werbung. Mit einem Einmalkauf kannst du alle Werbung entfernen. Du erreichst uns unter der unten genannten E-Mail-Adresse.
+  </div>
+
+  <h3>1. Wer wir sind und wie du uns erreichst</h3>
+  <p>Fairdeck Cribbage wird von AkoTech herausgegeben. Fragen und Anliegen zum Datenschutz: <a href="mailto:akn.kaplanoglu@gmail.com">akn.kaplanoglu@gmail.com</a>. Das ist der einzige öffentliche Kontaktweg. Diese Seite nennt weder eine Postanschrift noch ein Niederlassungsland.</p>
+
+  <h3>2. Was die App auf deinem Gerät speichert</h3>
+  <p>Die App speichert Folgendes nur auf deinem Gerät. Den Spielfortschritt legt sie als Dateien im privaten Speicher der App unter Android ab, die Einstellungen und die Kopie der Käufe als App-Einstellungen; andere Apps können sie nicht lesen. Die App fügt ihnen keine eigene Verschlüsselung hinzu.</p>
+  <table>
+    <thead><tr><th>Was</th><th>Wozu</th></tr></thead>
+    <tbody>
+      <tr><td>Die laufende Partie</td><td>Damit sie einen Anruf oder eine geschlossene App übersteht und du dort weitermachen kannst, wo du aufgehört hast.</td></tr>
+      <tr><td>Statistiken, Ergebnisse des Tages-Deals und deine Serie</td><td>Damit sie dir in der App angezeigt werden können.</td></tr>
+      <tr><td>Einstellungen: Schwierigkeit, Spiellänge, Regeln, Tempo und Anzeigeoptionen, Ton, Kartenrücken, Brett, Design und Sprache</td><td>Um deine Auswahl zu merken.</td></tr>
+      <tr><td>Eine Kopie dessen, was dein Google-Konto gekauft hat („Werbung entfernen“, „Themenpaket“)</td><td>Damit die Käufe beim nächsten Start auch ohne Verbindung gelten.</td></tr>
+      <tr><td>Zähler für die Werbung: Datum des ersten Starts, Zahl der beendeten Partien, Zahl der heute gezeigten Anzeigen und Zeitpunkt der letzten</td><td>Um Anzeigen zu verteilen, zum Beispiel damit die ersten Partien werbefrei bleiben (Abschnitt 3).</td></tr>
+      <tr><td>Wie viele kostenlose Ablage-Tipps heute benutzt und wie viele mit einer freiwilligen Anzeige verdient wurden</td><td>Um das tägliche Tipp-Kontingent einzuhalten.</td></tr>
+      <tr><td>Das Datum, an dem die App zuletzt bei Google Play angefragt hat, ihr Bewertungsfenster zu zeigen</td><td>Damit nicht zu früh erneut gefragt wird (Abschnitt 4).</td></tr>
+    </tbody>
+  </table>
+  <p>Die Austeilung des Tages-Deals ergibt sich aus dem Datum, und der Startwert einer Austeilung wird auf deinem Gerät erzeugt. Nichts davon wird an uns gesendet. Die App fragt weder nach deinem Namen, deiner E-Mail-Adresse, deinem Geburtsdatum, deiner Telefonnummer, deinen Kontakten, deinem Standort, deinen Fotos, Dateien, Mikrofon- oder Kameradaten noch nach irgendeiner Kontokennung, und sie speichert sie auch nicht.</p>
+  <p><strong>Wiedergabecode kopieren.</strong> Auf dem Bildschirm mit dem Protokoll einer Austeilung kopiert eine Schaltfläche einen Wiedergabecode für diese Austeilung in die Zwischenablage deines Telefons. Nichts verlässt die App, solange du nicht selbst die Schaltfläche drückst und den Text anschließend irgendwo einfügst.</p>
+  <p><strong>Diese Seite öffnen.</strong> Die Zeile „Datenschutzerklärung“ in den Einstellungen öffnet diese Seite im Webbrowser deines Telefons. Die App zeigt keine Webseiten in sich selbst an.</p>
+  <p><strong>Android-Berechtigungen.</strong> Die installierte App führt diese Berechtigungen auf:</p>
+  <ul>
+    <li><code>android.permission.INTERNET</code> und <code>android.permission.ACCESS_NETWORK_STATE</code>: werden von den Werbe- und Play-Billing-Bibliotheken von Google für die Kommunikation mit Google verwendet. Der eigene Code von Fairdeck stellt keine Netzwerkanfragen, und es gibt keinen Server von uns, mit dem er sprechen könnte.</li>
+    <li><code>com.android.vending.BILLING</code>: erlaubt der App, Google Play nach den freiwilligen Käufen zu fragen.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code> und <code>android.permission.ACCESS_ADSERVICES_TOPICS</code>: von der Werbebibliothek von Google hinzugefügt, damit Werbung die Android-Werbe-ID und die Werbedienste von Android nutzen kann (Abschnitt 3).</li>
+    <li><code>android.permission.WAKE_LOCK</code> und <code>android.permission.FOREGROUND_SERVICE</code>: von Google-Bibliotheken für deren Hintergrundarbeit hinzugefügt.</li>
+    <li>Eine interne Berechtigung, <code>com.akotech.fairdeck.cribbage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>, die die Support-Bibliothek von Android hinzufügt, um die Broadcast-Empfänger der App zu schützen.</li>
+  </ul>
+  <p>Keine davon gibt der App Zugriff auf deine Kontakte, deinen Standort, Fotos, Dateien, das Mikrofon oder die Kamera, und du wirst bei keiner um Zustimmung gebeten: Android erteilt sie bei der Installation. Das Bewertungsfenster von Google braucht keine eigene Berechtigung, weil die Google-Play-App es anzeigt.</p>
+
+  <h3>3. Werbung (Google AdMob) und deine Einwilligung</h3>
+  <p>Die App zeigt Werbung, die über Google AdMob ausgeliefert wird. Es gibt zwei Arten:</p>
+  <ul>
+    <li><strong>Eine Vollbildanzeige zwischen zwei Partien.</strong> Sie kann nur erscheinen, wenn du auf dem Bildschirm am Spielende „Neues Spiel“ antippst. Nie während eine Runde läuft und nie beim Öffnen der App. Höchstens eine pro Partie. Derzeit sind die ersten beiden beendeten Partien werbefrei, in den ersten 15 Minuten nach dem ersten Start wird keine Anzeige gezeigt, zwischen zwei Anzeigen liegen mindestens 5 Minuten, und es werden höchstens 6 pro Tag gezeigt.</li>
+    <li><strong>Eine freiwillige Anzeige für einen zusätzlichen Ablage-Tipp.</strong> Du hast 3 kostenlose Ablage-Tipps pro Tag. Sind sie aufgebraucht, bietet der Bildschirm am Ende einer Partie gegen den Computer „Kurze Werbung für einen Tipp ansehen“ an; das bringt einen Tipp für eine spätere Hand. Die Anzeige startet nur, wenn du diese Schaltfläche antippst; eine Anzeige ergibt einen Tipp.</li>
+  </ul>
+  <p>Der Einmalkauf „Werbung entfernen“ (Abschnitt 4) entfernt alle Werbung und macht die Ablage-Tipps unbegrenzt. Wenn du ihn besitzt, fragt die App nicht nach einer Einwilligung und fordert keine Werbung an.</p>
+  <p><strong>Was AdMob erfassen kann.</strong> Um Werbung auszuliefern und zu messen, kann das AdMob-SDK (Google LLC oder Google Ireland Limited, je nachdem, wo du dich befindest) Folgendes erfassen und verarbeiten:</p>
+  <ul>
+    <li>deine Android-Werbe-ID, die du in den Einstellungen deines Telefons zurücksetzen oder löschen kannst;</li>
+    <li>Geräte- und App-Informationen wie Gerätemodell, Betriebssystemversion, Sprache, App-Version und einen ungefähren Standort, der aus deiner IP-Adresse abgeleitet wird;</li>
+    <li>deine IP-Adresse, Informationen über Interaktionen mit Anzeigen (Einblendungen, Klicks, ob ein Video bis zum Ende angesehen wurde) und Diagnoseinformationen wie Abstürze und die Leistung des Werbecodes.</li>
+  </ul>
+  <p>Die App startet die Werbebibliothek kurz nach dem Öffnen (außer du besitzt „Werbung entfernen“), also auch vor der ersten Anzeige; Google kann diese Informationen daher schon ab diesem Zeitpunkt erhalten. Die App sendet von sich aus keine Informationen über dein Spiel, keine Schlüsselwörter und keinen Standort an Google. Wir erhalten weder deine Werbe-ID noch ein Profil von dir. Wie Google die Daten verarbeitet, steht unter <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">So verwendet Google Daten von Websites oder Apps, die unsere Dienste nutzen</a> und in der <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+  <p><strong>Einwilligung.</strong> Wo das Gesetz es verlangt (zum Beispiel im Europäischen Wirtschaftsraum und im Vereinigten Königreich), zeigt die App beim ersten Start und vor jeder Werbeanfrage das Einwilligungsformular von Google (auf Basis der User Messaging Platform von Google, einer zertifizierten Plattform zur Einwilligungsverwaltung). Je nach deinen Antworten fordert die App danach nur eingeschränkte oder nicht personalisierte Werbung an, oder gar keine; das entscheidet das Formular von Google. In diesen Regionen kannst du deine Wahl jederzeit prüfen oder ändern: <em>Einstellungen → Datenschutz → Einwilligung zu Werbung</em>. Diese Zeile erscheint nur dort, wo das Formular gilt. Anderswo kannst du die Personalisierung der Werbung in deinem Google-Konto und in den Android-Einstellungen steuern (<em>Einstellungen → Google → Anzeigen</em>); dort kannst du auch deine Werbe-ID zurücksetzen oder löschen.</p>
+
+  <h3>4. Käufe (Google Play Billing) und das Bewertungsfenster</h3>
+  <p>Es gibt zwei freiwillige In-App-Einmalkäufe über Google Play: „Werbung entfernen“ und „Themenpaket“ (zusätzliche Bretter und Kartenrücken). Es sind keine Abos: Nichts verlängert sich, und es wird nichts erneut abgebucht.</p>
+  <p><strong>So funktioniert ein Kauf.</strong> Wenn du kaufen willst, zeigt Google Play seinen eigenen Kaufbildschirm und wickelt die Zahlung nach den Bedingungen und der <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung</a> von Google ab. Die App erhält von Google Play lediglich auf deinem Gerät die Bestätigung, dass der Kauf abgeschlossen ist. Wir sehen dabei nie deine Karten- oder Zahlungsdaten, deinen Namen oder deine E-Mail-Adresse, und wir betreiben keinen Server, der Kaufinformationen empfängt. Die App bestätigt („acknowledge“) den Kauf gegenüber Google Play und speichert die in Abschnitt 2 beschriebene Kopie dessen, was du besitzt. Die Kopie ist an kein Konto von uns gebunden.</p>
+  <p><strong>Wiederherstellen.</strong> Bei jedem Start der App und wenn du im Shop „Käufe wiederherstellen“ antippst, fragt die App Google Play, welche Käufe dein Google-Konto besitzt, damit sie auf einem neuen Telefon funktionieren und ein erstatteter Kauf nicht mehr gilt. Dafür braucht es eine Internetverbindung; zum Spielen nicht, und es ändert sich nichts, wenn Google Play nicht antwortet.</p>
+  <p><strong>Die Play-Billing-Bibliothek von Google.</strong> Das ist Google-Code, der in die App eingebaut ist. Neben der Kommunikation mit der Google-Play-App kann sie eigene technische und Nutzungsinformationen an Google senden, wie in der Datenschutzerklärung von Google beschrieben. Wir erhalten diese Informationen nicht und kontrollieren sie nicht. Erstattungen und Zahlungsfragen bearbeitet Google Play nach seiner Erstattungsrichtlinie; wir können deine Käufe weder sehen noch ändern.</p>
+  <p><strong>Bewertungsfenster.</strong> Nachdem du eine Partie gegen den Computer gewonnen hast, wenn mindestens 5 Partien beendet sind und höchstens einmal alle 60 Tage, kann die App Google Play bitten, sein eigenes Bewertungsfenster zu zeigen. Google Play entscheidet, ob es erscheint, und zeichnet es selbst; du kannst bewerten oder es schließen, ohne die App zu verlassen. Die App sieht weder deine Bewertung noch einen Text, den du schreibst, und es wird nichts an uns gesendet. Für das Fenster gilt die Datenschutzerklärung von Google.</p>
+
+  <h3>5. Sicherungen und das Löschen deiner Daten</h3>
+  <p>Die App erlaubt die Sicherungs- und Gerätewechsel-Funktionen von Android. Sind sie eingeschaltet, kann Android Folgendes in dein Google-Konto oder bei einem Wechsel auf ein neues Telefon kopieren: die Dateien mit Partie und Statistiken (<code>progress.json</code> und ihre Sicherheitskopie) sowie die App-Einstellungen (Einstellungen und die Kopie deiner Käufe). Alle Einstellungsdateien der App sind enthalten, darunter können auch Auswahlen stehen, die Bibliotheken von Google speichern, etwa deine Einwilligungsauswahl zur Werbung. Nur drei Dateien der Werbebibliothek und der Google-Play-Dienste (<code>admob.xml</code>, <code>com.google.android.gms.ads.xml</code> und <code>com.google.android.gms.appid.xml</code>) sind ausgeschlossen. Die Sicherung liegt bei Google in deinem Google-Konto, nicht auf einem Server von uns, und wir haben keinen Zugriff darauf. Du verwaltest sie in Android unter <em>Einstellungen → Google → Sicherung</em> (die Bezeichnung hängt vom Telefon ab) und kannst sie dort löschen.</p>
+  <p>Weil die Spieldaten auf deinem Gerät liegen, löschst du sie selbst: Öffne die Android-Einstellungen → Apps → Fairdeck Cribbage → Speicher → Speicher löschen, oder deinstalliere die App. Dadurch werden deine Partie, deine Statistiken, deine Einstellungen und die in Abschnitt 2 beschriebenen Zähler entfernt. Käufe gehören zu deinem Google-Konto und werden durch das Löschen der Daten oder das Deinstallieren nicht entfernt; die App findet sie beim nächsten Start ohne zusätzliche Kosten wieder. Diese Version hat keine Löschschaltfläche in der App.</p>
+
+  <h3>6. Analysen und Absturzberichte</h3>
+  <p>Die App enthält keinen eigenen Code für Analysen oder Absturzberichte, und wir erheben aus der App heraus weder Nutzungsstatistiken noch Absturzberichte. Wenn du Google Play nutzt, kann Google uns als Entwickler zusammengefasste und anonymisierte Statistiken wie Installationen, Deinstallationen, Bewertungen und Zahlen zu Abstürzen oder „App reagiert nicht“ bereitstellen, nach den eigenen Bedingungen von Google und deinen Google-Play-Einstellungen. Die in Abschnitt 3 beschriebene Werbebibliothek erfasst eigene Diagnosedaten für Google; wir erhalten sie nicht.</p>
+
+  <h3>7. Was wir nicht tun</h3>
+  <ul>
+    <li>Wir verkaufen deine Daten nicht.</li>
+    <li>Wir fragen nicht nach deinen Kontakten, der Kamera, dem Mikrofon, deinen Fotos oder deinem genauen Standort.</li>
+    <li>Wir betreiben keine Konten, daher gibt es auf unserer Seite nichts, wobei du dich anmelden oder was du löschen müsstest.</li>
+  </ul>
+  <p>Das bedeutet nicht, dass keine Daten verarbeitet werden: Die Werbe- und Abrechnungsdienste in den Abschnitten 3 und 4 verarbeiten die dort beschriebenen Daten.</p>
+
+  <h3>8. Alter</h3>
+  <p>Fairdeck Cribbage ist ein Kartenspiel für Erwachsene. Es richtet sich nicht an Kinder, und seine Zielgruppe ist 18 Jahre und älter. Es fordert niemanden, auch keine Kinder, auf, persönliche Angaben einzugeben. Wenn du Elternteil oder Erziehungsberechtigter bist und glaubst, dass ein Kind uns persönliche Angaben geschickt hat, zum Beispiel per E-Mail, schreib uns an die oben genannte E-Mail-Adresse, damit wir die Anfrage prüfen können. Du kannst auch die Werbe-ID in den Einstellungen deines Telefons zurücksetzen.</p>
+
+  <h3>9. Diese Website</h3>
+  <p>Diese Seite wird auf GitHub Pages gehostet. Wenn du sie öffnest, kann GitHub technische Daten wie deine IP-Adresse, Browser- und Geräteangaben und Anfrageprotokolle nach der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a> (englisch) verarbeiten. Das ist von der App getrennt. Wir fügen dieser Seite keine Analysewerkzeuge, Cookies, Skripte oder externen Schriften hinzu und betreiben darauf kein Tracking.</p>
+
+  <h3>10. Wenn du uns eine E-Mail schreibst</h3>
+  <p>Wenn du uns schreibst, erhalten wir deine E-Mail-Adresse, den in deinem Konto angezeigten Namen, deine Nachricht und alles, was du beifügst. Wir verwenden das nur, um deine Nachricht zu lesen und zu beantworten und dein Anliegen zu bearbeiten. Die E-Mail liegt im E-Mail-Konto des Herausgebers, das von Google bereitgestellt wird (siehe die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>). Wir bewahren sie so lange auf, wie es zur Bearbeitung des Anliegens und zu dessen Dokumentation nötig ist, und löschen sie danach. Eine feste Zahl von Tagen haben wir nicht festgelegt. Bitte sende keine sensiblen persönlichen Angaben; deine Spieldaten musst du uns nie schicken.</p>
+
+  <h3>11. Deine Wahlmöglichkeiten und Rechte</h3>
+  <ul>
+    <li>Prüfe oder ändere deine Einwilligung zur Werbung unter <em>Einstellungen → Datenschutz → Einwilligung zu Werbung</em>, wo diese Zeile angezeigt wird.</li>
+    <li>Setze deine Werbe-ID in den Android-Einstellungen zurück oder lösche sie, und steuere dort die Personalisierung der Werbung.</li>
+    <li>Entferne alle Werbung mit dem Einmalkauf „Werbung entfernen“.</li>
+    <li>Lösche die Daten auf deinem Gerät, indem du den Speicher der App löschst oder sie deinstallierst.</li>
+  </ul>
+  <p>Wir haben deine Spieldaten nicht, daher gibt es bei uns nichts nachzuschlagen oder zu löschen; du verwaltest sie wie oben beschrieben auf deinem Gerät. Zu E-Mails, die du uns geschickt hast, kannst du verlangen, dass wir dir mitteilen, was wir gespeichert haben, oder es löschen. Je nach Wohnort (zum Beispiel nach der DSGVO oder der britischen DSGVO) kann dir das örtliche Recht Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch und Beschwerde bei einer Datenschutzbehörde einräumen; diese Seite nennt nicht, welches Recht für den Herausgeber gilt. Daten, die Google hält (Werbung, Käufe, Sicherung), verwaltest du mit den Werkzeugen von Google, zum Beispiel unter <a href="https://myaccount.google.com/" rel="noopener">myaccount.google.com</a>.</p>
+
+  <h3>12. Sicherheit</h3>
+  <p>Deine Daten bleiben auf deinem Gerät, geschützt durch die App-Isolation von Android. Keine Methode der Speicherung oder Übertragung ist völlig sicher, und wir geben keine Garantie für absolute Sicherheit.</p>
+
+  <h3>13. Dienste Dritter</h3>
+  <p>Google AdMob und die Google User Messaging Platform (Werbung und Einwilligung), Google Play (Installation und Aktualisierung der App, Sicherung, Käufe über Google Play Billing und das Bewertungsfenster) und GitHub (Hosting dieser Seite) sind eigenständige Dienste mit eigenen Datenschutzbedingungen: <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a> und <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.</p>
+
+  <h3>14. Änderungen dieser Erklärung</h3>
+  <p>Wenn wir diese Erklärung ändern, aktualisieren wir das Datum oben auf dieser Seite. Änderungen, die Datenerhebung, Analysen oder andere Dienste hinzufügen, werden veröffentlicht, bevor die Version erscheint, die sie einführt.</p>
+</section>
+
+</main>
+<footer>
+  <p>AkoTech · <a href="mailto:akn.kaplanoglu@gmail.com">akn.kaplanoglu@gmail.com</a> · <a href="../../">All policies / Toutes les politiques / Alle Richtlinien</a></p>
+</footer>
+</body>
+</html>
